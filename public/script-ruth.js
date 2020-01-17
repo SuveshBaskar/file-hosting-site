@@ -32,11 +32,11 @@
         let ymc = document.getElementById('ymDivCircle')
 
         console.log(event,"EVENT")
-        if(event.event_code === "open_bot"){
+        if(event.data.event === "open_bot"){
             ymf.style.display="block"
             ymf.style.opacity=1
             ymc.classList.add('open')
-        }else if(event.event_code === "close_bot"){
+        }else if(event.data.event === "close_bot"){
             let notifHTML = `<div class="close" onclick="window.ymCloseNotification(event);">x</div><div style="font-weight: bold;">Tenaga bot</div>`
             if(!document.getElementById('ym-notification').innerHTML){
                 console.log("Notification is not there")

@@ -31,7 +31,7 @@
         let ymf = document.getElementById('ymFrameHolder')
         let ymc = document.getElementById('ymDivCircle')
 
-        console.log(event,"EVENT")
+        console.log(event.data.event,"EVENT")
         if(event.data.event === "open_bot"){
             ymf.style.display="block"
             ymf.style.opacity=1
@@ -46,6 +46,8 @@
             }
             ymf.style.display="none"
             ymf.style.opacity=0
-        }else{}
+        }else{
+            console.log("NO EVENT")
+        }
     });
 })();

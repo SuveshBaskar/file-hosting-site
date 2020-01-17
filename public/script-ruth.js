@@ -30,6 +30,8 @@
         }
         let ymf = document.getElementById('ymFrameHolder')
         let ymc = document.getElementById('ymDivCircle')
+
+        console.log(event,"EVENT")
         if(event.event_code === "open_bot"){
             ymf.style.display="block"
             ymf.style.opacity=1
